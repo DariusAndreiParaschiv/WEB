@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="ro" dir="ltr">
+  <head>
+    <%- include("../fragmente/head") %>
+  </head>
+  <body>
+  <%- include("../fragmente/header") %>
+  <p id="watermark"></p>
+      <!-- MAIN -->
+      <main>
+        <div id = "grid">
+
+          <section id = "poster">
+            <img class = "imagine" src="materiale/img1.png" alt="logo">
+            <div class = "welcome">Bun venit pe site-ul care te va ajuta sa scapi de afurisitele de carti in plus si sa faci rost de minunatele carti pe care le cautai in tot acest timp!</div>
+            <div class = "poti">Pe acest site poti:<br />1. Sa cumperi cartonase<br />2. Sa vinzi cartonase<br />3. Sa faci schimb de cartonase</div>
+            <img class = "imagine"  src="materiale/img2.jpg" alt="img">
+          </section>
+          <!-- SECTION -->
+          <%- include("../fragmente/galerie-s") %>
+          <%- include("../fragmente/galerie-a") %>
+          <div id="container-video">
+            <img class="poster-video" src="materiale/Yugioh_Card_Back_2.jpg" alt="Yu-Gi-Oh!">
+            <div id="centrare-video">
+              <div id="clip-video">
+                <div id="stil-video">
+                  <video width="320" height="240" playsinline autoplay controls loop muted>
+                    <source src="materiale/slifer.mp4" type="video/mp4">
+                    <source src="materiale/slifer.ogv" type="video/ogv">
+                    <track default src="resurse/track_ro.vtt" kind="captions" srclang="ro" label="romana">
+                    <track default src="resurse/track_en.vtt" kind="captions" srclang="en" label="engleza">
+                  </video>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- OFERTE PT DETAILS/SUMMARY -->
+          <section id = "top">
+            
+              <div class="vandute">
+                <h4>Cele mai bine vandute</h4>
+              <table id = "vandute">
+                <thead>
+                  <th>Carte</th>
+                  <th>Raritate</th>
+                  <th>Pret</th>
+                </thead>
+                <tbody>
+                  <tr class = "rv">
+                    <td>Lorem Ipsum</td>
+                    <td>Lorem Ipsum</td>
+                    <td>Lorem Ipsum</td>
+                  </tr>
+                  <tr class = "rv">
+                    <td>Lorem Ipsum</td>
+                    <td>Lorem Ipsum</td>
+                    <td>Lorem Ipsum</td>
+                  </tr>
+                  <tr class = "rv">
+                    <td>Lorem Ipsum</td>
+                    <td>Lorem Ipsum</td>
+                    <td>Lorem Ipsum</td>
+                  </tr>
+                  <tr class = "rv">
+                    <td>Lorem Ipsum</td>
+                    <td>Lorem Ipsum</td>
+                    <td>Lorem Ipsum</td>
+                  </tr>
+                  <tr class = "rv">
+                    <td>Lorem Ipsum</td>
+                    <td>Lorem Ipsum</td>
+                    <td>Lorem Ipsum</td>
+                  </tr>
+                </tbody>
+                <tfoot>
+                  <tr>
+                    <td colspan = "3">Restul cartilor</td>
+                  </tr>
+                </tfoot>
+              </table>
+              </div>
+
+
+            
+              <div class="oferte">
+                <h4>Cele mai bune oferte</h4>
+              <table id = "oferte">
+                <thead>
+                  <th>Carte</th>
+                  <th>Raritate</th>
+                  <th>Pret</th>
+                </thead>
+                <tbody>
+                  <tr class = "ro">
+                    <td>Lorem Ipsum</td>
+                    <td>Lorem Ipsum</td>
+                    <td>Lorem Ipsum</td>
+                  </tr>
+                  <tr class = "ro">
+                    <td>Lorem Ipsum</td>
+                    <td>Lorem Ipsum</td>
+                    <td>Lorem Ipsum</td>
+                  </tr>
+                  <tr class = "ro">
+                    <td>Lorem Ipsum</td>
+                    <td>Lorem Ipsum</td>
+                    <td>Lorem Ipsum</td>
+                  </tr>
+                  <tr class = "ro">
+                    <td>Lorem Ipsum</td>
+                    <td>Lorem Ipsum</td>
+                    <td>Lorem Ipsum</td>
+                  </tr>
+                  <tr class = "ro">
+                    <td>Lorem Ipsum</td>
+                    <td>Lorem Ipsum</td>
+                    <td>Lorem Ipsum</td>
+                  </tr>
+                </tbody>
+                <tfoot>
+                  <tr>
+                    <td colspan = "3">Restul cartilor</td>
+                  </tr>
+                </tfoot>
+              </table>
+              </div>
+
+
+          </section>
+
+          <section id = "noutati">
+            <h3>Noutati</h3>
+            <ul>
+              <li>A aparut un nou box pe piata</li>
+              <li>A aparut un nou set pe piata</li>
+            </ul>
+          </section>
+
+          <section id = "evenimente">
+            <h3>Evenimente</h3>
+            Va avea loc turneul local Lorem Ipsum
+          </section>
+
+          <section id = "useri">
+            <h3>Lista utilizatori</h3>
+            <ul>
+              <li>Lorem ipsum</li>
+              <li>Lorem ipsum</li>
+              <li>Lorem ipsum</li>
+              <li>Lorem ipsum</li>
+              <li>Lorem ipsum</li>
+            </ul>
+          </section>
+
+          <section id = "date_user">
+            <h3>Date utilizator</h3>
+            <p id="ip"><%- locals.ip %></p>
+          </section>
+
+          <section id = "date_site">
+            <h3>Date site</h3>
+            Lorem ipsum
+          </section>
+
+          <section id = "info">
+            <h3>Jocul Yu-Gi-Oh!</h3>
+            <b>Yu-Gi-Oh!</b> este unul dintre cele mai populare jocuri de tip <b>cardgame</b> creat de compania de jocuri video, <b>Konami</b>.<br />
+            Pentru mai multe detalii accesati <a href = "/about_ygo">About Yu-Gi-Oh!</a>
+          </section>
+
+        </div>
+      </main>
+    <%- include("../fragmente/footer") %>
+      <a id = "link-top" href="#"> &#5123; <span class="tt">Am dat scroll prea mult, vreau inapoi sus</span></a>
+      <div class="banner">
+        <b>Disclaimer!</b> Acesta este un proiect scolar, va rog nu ma dati in judecata!
+      </div>
+  </body>
+
+</html>

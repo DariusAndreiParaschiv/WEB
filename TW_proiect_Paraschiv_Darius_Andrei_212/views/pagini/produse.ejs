@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ro" dir="ltr">
+
+<head>
+    <%- include("../fragmente/head") %>
+</head>
+
+<body>
+    <%- include("../fragmente/header") %>
+        <p id="watermark"></p>
+        <!-- MAIN -->
+        <main>
+            <h3>Produse</h3>
+            <% for(let prod of locals.produse) {%>
+                <article>
+                    <p>Nume:<a href="/produs/<%- prod.id %>"><span>
+                            <%- prod.nume %>
+                        </span></a></p>
+                    <p>Pret:<span>
+                        <%- prod.pret %>
+                    </span></p>
+                    <figure>
+                        <img src="materiale/<%- prod.img %>" alt="img">
+                    </figure>
+                </article>
+            <% } %>
+        </main>
+        <%- include("../fragmente/footer") %>
+            <a id="link-top" href="#"> &#5123; <span class="tt">Am dat scroll prea mult, vreau inapoi sus</span></a>
+            <div class="banner">
+                <b>Disclaimer!</b> Acesta este un proiect scolar, va rog nu ma dati in judecata!
+            </div>
+</body>
+
+</html>

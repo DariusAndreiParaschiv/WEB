@@ -1,0 +1,135 @@
+*
+{
+  --a: #4852E0;
+  --ad: #9BA1FA;
+  --afd: #CFD0E6;
+  --ai: #45476B;
+  --afi: #1F2361
+}
+
+#nav
+{
+  top: 0;
+  position: sticky;
+  z-index:10;
+}
+
+#nav .menu
+{
+  position: absolute;
+  background-color: var(--a);
+  text-align: center;
+  padding: 0;
+}
+
+#nav .menu li a
+{
+  text-decoration: none;
+  color: black;
+}
+
+#nav .menu > li
+{
+  display: inline-block;
+  position: relative;
+  width: 30%;
+}
+
+#nav .menu li:hover > a
+{
+  color: white;
+}
+
+#nav .menu li:hover
+{
+  background-color: var(--a);
+}
+
+#nav .sub-menu
+{
+  display: none;
+  background-color: var(--a);
+  position: absolute;
+  padding: 0;
+  width: 100%;
+}
+
+#nav .sub-menu li
+{
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+  color: black;
+  float: none;
+}
+
+#nav .sub:hover .sub-menu
+{
+  display: block;
+}
+
+#burg
+{
+  display: block;
+  cursor: pointer;
+}
+
+#check
+{
+  display: none;
+}
+
+.home
+{
+  display: none;
+}
+
+#bc-burg
+{
+  background-color: var(--a);
+}
+
+.menu
+{
+  display: none;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+#check:checked + .menu
+{
+  animation: clip 1s linear;
+  display: block;
+}
+
+#nav li
+{
+  padding: 0;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+#nav .menu li
+{
+  width: 100%;
+}
+
+#nav .menu ul
+{
+  width:100%;
+  z-index:20;
+}
+
+@keyframes clip
+{
+  0%
+  {
+    clip-path: circle(0% at 0% 0%)
+  }
+
+  100%
+  {
+    clip-path: circle(100%)
+  }
+}

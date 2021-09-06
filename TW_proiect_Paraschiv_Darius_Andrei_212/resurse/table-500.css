@@ -1,0 +1,25 @@
+.vandute
+{
+  overflow-y: auto;
+  height: 200px;
+}
+
+.vandute th
+{
+  position: sticky;
+  top: -1px;
+  height: 100%;
+}
+
+.oferte
+{
+  overflow-y: auto;
+  height: 200px;
+}
+
+.oferte th
+{
+  position: sticky;
+  top: -1px;
+  height: 100%;
+}

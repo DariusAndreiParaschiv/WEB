@@ -1,0 +1,24 @@
+#poster
+{
+  display: block;
+  position: relative;
+  width: 100%;
+}
+
+#poster div, #poster img
+{
+  display: block;
+}
+
+#poster img
+{
+  width: 100%;
+}
+
+#poster .welcome::after
+{
+  content: '';
+  display: block;
+  border: 1px solid black;
+  width: 100%;
+}

@@ -1,0 +1,237 @@
+*
+{
+  --a: #4852E0;
+  --ad: #9BA1FA;
+  --afd: #CFD0E6;
+  --ai: #45476B;
+  --afi: #1F2361
+}
+
+#grid
+{
+  display: grid;
+  grid-template-areas:
+  "poster poster poster poster"
+  "poster poster poster poster"
+  "galerie-s galerie-s galerie-s galerie-s"
+  "galerie-a galerie-a galerie-a galerie-a"
+  "video video video video"
+  "top top evenimente evenimente"
+  "top top noutati noutati"
+  "useri date_user date_user date_site"
+  "info info info info";
+}
+
+#grid > *
+{
+  outline: 1px solid grey;
+}
+
+body
+{
+  font-size: calc(10px + 1vw);
+  font-family: 'Merriweather Sans';
+  background-color: var(--ad);
+}
+
+#poster img
+{
+  display: inline-block;
+  width: 50%;
+  height: auto;
+}
+
+#poster
+{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#poster > div
+{
+  width: 50%;
+  text-align: center;
+  line-height: 50px;
+  margin:auto;
+}
+
+#vandute
+{
+  counter-reset: vand;
+}
+
+#vandute .rv
+{
+  counter-increment: vand;
+}
+
+#vandute .rv td:first-child::before
+{
+  content: counter(vand)". ";
+}
+
+#oferte
+{
+  counter-reset: ofer;
+}
+
+#oferte .ro
+{
+  counter-increment: ofer;
+}
+
+#oferte .ro td:first-child::before
+{
+  content: counter(ofer)". ";
+}
+
+#poster
+{
+  grid-area: poster;
+}
+
+#header
+{
+  grid-area: header;
+}
+
+#noutati
+{
+  grid-area: noutati;
+}
+
+#evenimente
+{
+  grid-area: evenimente;
+}
+
+#galerie-statica
+{
+  grid-area: galerie-s;
+}
+
+#galerie-animata
+{
+  grid-area: galerie-a;
+}
+
+#container-video
+{
+  grid-area: video;
+}
+
+#top
+{
+  grid-area: top;
+}
+
+#useri
+{
+  grid-area: useri;
+}
+
+#date_user
+{
+  grid-area: date_user;
+}
+
+#date_site
+{
+  grid-area: date_site;
+}
+
+#info
+{
+  grid-area: info;
+}
+
+#footer
+{
+  grid-area: footer;
+}
+
+hr
+{
+  overflow: visible;
+  position: relative;
+  border-style: double;
+  border-width: 4px;
+  border-color: black;
+  height: 10px;
+  border-radius: 10px;
+  border-top: none;
+}
+
+hr::after
+{
+  content: " ";
+  position: absolute;
+  top: 10px;
+  left: -4px;
+  display: block;
+  width: 100%;
+  border-style: double;
+  border-width: 4px;
+  border-color: black;
+  height: 10px;
+  border-radius: 10px;
+  border-bottom: none;
+}
+
+#link-top
+{
+  z-index: 50;
+  text-decoration: none;
+  color: black;
+  display: block;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  --dim: 35px;
+  height: var(--dim);
+  width: var(--dim);
+  line-height: var(--dim);
+  text-align: center;
+  border: 1px solid black;
+  border-radius: 50%;
+  box-shadow: 0 0 10px var(--ai);
+  opacity: 0.5;
+  transition-duration: 0.5s;
+  transition-property: box-shadow, opacity, background-color, color;
+}
+
+#link-top:hover
+{
+  box-shadow: 0 0 12px black;
+  opacity: 1;
+  background-color: var(--ai);
+  color: white;
+}
+
+#link-top .tt
+{
+  visibility: hidden;
+  top: -5px;
+  right: 105%;
+  position: absolute;
+  z-index: 51;
+  width: 300px;
+  font-size: 15px;
+  border: 1px solid black;
+  background-color: white;
+  color: black;
+}
+
+#link-top:hover .tt
+{
+  visibility: visible;
+  transition-delay: 0.3s;
+}
+
+@media screen and (max-width:650px)
+{
+  #grid
+{
+  display: block;
+}
+}

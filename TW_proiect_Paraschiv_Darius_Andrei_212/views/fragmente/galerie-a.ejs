@@ -1,0 +1,18 @@
+<section id="galerie-animata">
+    <h2>Galerie animata</h2>
+    <div id="grid-galerie">
+        <div>
+            <% for(let im of locals.imga) { %>
+                <figure>
+                    <picture>
+                        <source srcset="<%- im.mic %>" media="(max-width: 500px)">
+                        <img src="<%- im.mare %>" alt="poza">
+                    </picture>
+                    <figcaption>
+                        <%- im.nume %>
+                    </figcaption>
+                </figure>
+                <% } %>
+        </div>
+    </div>
+</section>

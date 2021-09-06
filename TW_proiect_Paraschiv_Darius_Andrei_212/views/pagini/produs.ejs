@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ro" dir="ltr">
+
+<head>
+    <%- include("../fragmente/head") %>
+</head>
+
+<body>
+    <%- include("../fragmente/header") %>
+        <p id="watermark"></p>
+        <!-- MAIN -->
+        <main>
+            <h3><%- locals.prod.nume %></h3>
+            <p>Pret: <span class="pret">
+                    <%- locals.prod.pret %>
+                </span></p>
+            <p>Descriere: <span class="descriere">
+                    <%- locals.prod.descriere %>
+                </span></p>
+            <p>ATK: <span class="atk">
+                    <%- locals.prod.atk %>
+                </span></p>
+            <p>DEF: <span class="def">
+                    <%- locals.prod.def %>
+                </span></p>
+            <p>Gramaj: <span class="gramaj">
+                    <%- locals.prod.gramaj %>
+                </span></p>
+            <p>Categorie: <span class="categorie">
+                    <%- locals.prod.categorie %>
+                </span></p>
+            <figure class="imag-produs">
+                <img src="/resurse/imagini/produse/<%- locals.prod.imagine %>" alt="[imagine <%- locals.prod.nume %>]" />
+            </figure>
+        </main>
+        <%- include("../fragmente/footer") %>
+            <a id="link-top" href="#"> &#5123; <span class="tt">Am dat scroll prea mult, vreau inapoi sus</span></a>
+            <div class="banner">
+                <b>Disclaimer!</b> Acesta este un proiect scolar, va rog nu ma dati in judecata!
+            </div>
+</body>
+
+</html>

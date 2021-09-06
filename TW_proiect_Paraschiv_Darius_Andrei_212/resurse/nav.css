@@ -1,0 +1,130 @@
+*
+{
+  --a: #4852E0;
+  --ad: #9BA1FA;
+  --afd: #CFD0E6;
+  --ai: #45476B;
+  --afi: #1F2361
+}
+
+#nav
+{
+  top: 0;
+  background-color: var(--a);
+  position: sticky;
+  z-index:10;
+  width: 100%;
+}
+
+#nav .menu
+{
+  text-align: center;
+  padding: 0;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 100%;
+}
+
+#nav .menu li a
+{
+  text-decoration: none;
+  color: black;
+}
+
+#nav .menu > li
+{
+  display: inline-block;
+  position: relative;
+  width: 30%;
+}
+
+#nav .menu .opt
+{
+  overflow: visible;
+}
+
+#nav .menu .opt::after
+{
+  content: " ";
+  display: none;
+  position: absolute;
+  width: 99.60%;
+  height: 3px;
+  background-color: black;
+  border: 1px solid black;
+  bottom: -10px;
+}
+
+#nav .menu .opt:hover::after
+{
+  display: block;
+  animation: opt 0.5s linear;
+}
+
+#nav .menu li:hover > a
+{
+  color: white;
+}
+
+#nav .menu li:hover
+{
+  background-color: var(--a);
+}
+
+#nav .sub-menu
+{
+  display: none;
+  background-color: var(--a);
+  position: absolute;
+  padding: 0;
+  width: 100%;
+}
+
+#nav .sub-menu li
+{
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+  color: black;
+}
+
+#nav .sub:hover .sub-menu
+{
+  display: block;
+  animation: scale 0.5s linear;
+}
+
+#burg
+{
+  display: none;
+}
+
+#check
+{
+  display: none;
+}
+
+@keyframes scale
+{
+  0%
+  {
+    transform: scale(0, 0);
+  }
+  100%
+  {
+    transform: scale(1, 1)
+  }
+}
+
+@keyframes opt
+{
+  0%
+  {
+    transform: translateY(-47px);
+    opacity: 0;
+  }
+  100%
+  {
+    opacity: 1;
+  }
+}

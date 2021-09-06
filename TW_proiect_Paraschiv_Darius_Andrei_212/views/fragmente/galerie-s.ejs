@@ -1,0 +1,16 @@
+<section id="galerie-statica">
+    <h2>Galerie statica</h2>
+    <div id="grid-galerie">
+        <% for(let im of locals.img) { %>
+            <figure>
+                <picture>
+                    <source srcset="<%- im.mic %>" media="(max-width: 650px)">
+                    <img src="<%- im.mare %>" alt="poza">
+                </picture>
+                <figcaption>
+                    <%- im.nume %>
+                </figcaption>
+            </figure>
+            <% } %>
+    </div>
+</section>

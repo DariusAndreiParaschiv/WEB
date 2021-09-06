@@ -1,0 +1,103 @@
+$nr: random(11);
+// $nr: 9;
+
+#galerie-animata #grid-galerie 
+{
+    &:hover div > figure
+    {
+        animation-play-state: paused;
+    }
+    div > figure
+    {
+        figcaption
+        {
+            position:absolute;
+            background: white;
+            bottom:-17%;
+            height: 20%;
+            width: 300px;
+            text-align:center;
+        }
+        display: block;
+        position: absolute;
+        animation-name: galerie;
+        animation-duration: $nr * 4s;
+        animation-iteration-count: infinite;
+        transform-origin: 0% 50%;
+        z-index: 0;
+        left: -40px;
+    }
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+    position: relative;
+    height: 550px;
+    width: 300px;
+}
+    
+@for $j from $nr + 1 through 14
+{
+    #galerie-animata #grid-galerie div > figure:nth-child(#{$j})
+    {
+        display: none;
+    }
+}
+
+@for $i from $nr through 1
+{
+    #galerie-animata #grid-galerie div > figure:nth-child(#{$i})
+    {
+        animation-delay: ($nr - $i) * 4s;
+    }
+}
+
+@keyframes galerie 
+{
+    0%
+    {
+        z-index: 5;
+        opacity: 1;
+    }
+    5%
+    {
+        z-index: 5;
+        transform: scaleY(0.5);
+        opacity: 1;
+    }
+    8%
+    {
+        z-index: 5;
+        transform: scaleY(0.5) rotate(180deg);
+        opacity: 1;
+    }
+    9%
+    {
+        transform: scaleY(0.5) rotate(180deg);
+        opacity: 0;
+        z-index: -10;
+    }
+    80%
+    {
+        opacity: 0;
+        z-index: -10;
+        transform: rotate(0deg);
+    }
+    81%
+    {
+        opacity: 1;
+        z-index: -10;
+    }
+    100%
+    {
+        opacity: 1;
+        z-index: 0;
+    }
+}
+
+@media screen and (max-width:1000px)
+{
+  #galerie-animata
+  {
+    display:none;
+  }
+}

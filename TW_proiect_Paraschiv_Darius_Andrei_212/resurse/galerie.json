@@ -1,0 +1,71 @@
+{
+    "cale": "materiale",
+    "img":[
+        {
+            "file": "DM.jpg",
+            "desc": "Dark Magician",
+            "ora": "5:00-12:00"
+        },
+        {
+            "file": "BEWD.jpg",
+            "desc": "Blue-eyes white dragon",
+            "ora": "12:00-20:00"
+        },
+        {
+            "file": "BEWD.jpg",
+            "desc": "Blue-eyes white dragon",
+            "ora": "12:00-20:00"
+        },
+        {
+            "file": "BEWD.jpg",
+            "desc": "Blue-eyes white dragon",
+            "ora": "12:00-20:00"
+        },
+        {
+            "file": "BEWD.jpg",
+            "desc": "Blue-eyes white dragon",
+            "ora": "12:00-20:00"
+        },
+        {
+            "file": "BEWD.jpg",
+            "desc": "Blue-eyes white dragon",
+            "ora": "12:00-20:00"
+        },
+        {
+            "file": "REBD.jpg",
+            "desc": "Red-eyes black dragon",
+            "ora": "20:00-5:00"
+        },
+        {
+            "file": "EHN.jpg",
+            "desc": "Elemental Hero Neos",
+            "ora": "5:00-12:00"
+        },
+        {
+            "file": "DAD.jpg",
+            "desc": "Dark Armed Dragon",
+            "ora": "12:00-20:00"
+        },
+        {
+            "file": "CAD.jpg",
+            "desc": "Cyber Angel Dakini",
+            "ora": "20:00-5:00"
+        },
+        {
+            "file": "SD.jpg",
+            "desc": "Stardust Dragon",
+            "ora": "5:00-12:00"
+        },
+        {
+            "file": "RDA.jpg",
+            "desc": "Red Dragon Archfiend",
+            "ora": "12:00-20:00"
+        },
+        {
+            "file": "JW.jpg",
+            "desc": "Junk Warrior",
+            "ora": "20:00-5:00"
+        }
+    ]
+    
+}

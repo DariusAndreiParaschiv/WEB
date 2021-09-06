@@ -1,0 +1,34 @@
+*
+{
+  --a: #4852E0;
+  --ad: #9BA1FA;
+  --afd: #CFD0E6;
+  --ai: #45476B;
+  --afi: #1F2361
+}
+
+.flex
+{
+  display: flex;
+}
+
+.tab a
+{
+  display: block;
+  text-decoration:none;
+  width:100px;
+  border:1px solid var(--a);
+  border-right: none;
+  border-bottom-left-radius: 10px;
+  border-top-left-radius: 10px;
+  background-image: linear-gradient(white, white 50%, var(--ad));
+  color:black;
+  transition:all 0.5s linear;
+  text-align: center;
+}
+
+.tab a:hover{
+  color: white;
+  background-image: none;
+  background-color: var(--a);
+}

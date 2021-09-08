@@ -1,0 +1,1 @@
+Site care are rolul de platformă pentru vinderea de cartonașe de joc Yu-Gi-Oh!, aici m-am folosit de JavaScript pentru realizarea server-ului, iar pentru stilizarea galeriei animate am utilizat SASS-ul 
